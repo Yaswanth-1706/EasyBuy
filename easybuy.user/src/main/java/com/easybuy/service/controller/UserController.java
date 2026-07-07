@@ -33,7 +33,7 @@ import com.easybuy.service.service.UserService;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 public class UserController {
 	@Autowired
 	private UserService userservice;
