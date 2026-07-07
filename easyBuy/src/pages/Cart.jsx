@@ -11,7 +11,7 @@ const Cart = () => {
     const user=JSON.parse(localStorage.getItem('user'))
      const fetchdata=async() => {
         try{
-            const response=await axios.get(`http://localhost:8082/api/auth/cart/getCartById/${user.userId}`,{
+            const response=await axios.get(`https://easybuy-production.up.railway.app/api/auth/cart/getCartById/${user.userId}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,
@@ -29,7 +29,7 @@ const Cart = () => {
             const arr = await Promise.all(
       data.map(async (item,key) => {
         const response = await axios.get(
-            `http://localhost:8082/api/auth/products/getProduct/${item.productId}`,{
+            `https://easybuy-production.up.railway.app/api/auth/products/getProduct/${item.productId}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,
@@ -64,7 +64,7 @@ const Cart = () => {
             }
         }
         try{
-        const response=await axios.delete(`http://localhost:8082/api/auth/cart/deletecart/${deleteId}`,{
+        const response=await axios.delete(`https://easybuy-production.up.railway.app/api/auth/cart/deletecart/${deleteId}`,{
           method: "DELETE",
           headers: {
     "Authorization": `Bearer ${tokens}`,

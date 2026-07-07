@@ -16,7 +16,7 @@ const Search = () => {
         const fetch=async()=>{
      if(search!=="")
      {
-     const response=await axios.get(`http://localhost:8082/api/auth/products/getProductByProductName/${search}`,{
+     const response=await axios.get(`https://easybuy-production.up.railway.app/api/auth/products/getProductByProductName/${search}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,

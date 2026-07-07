@@ -24,7 +24,7 @@ const UpdateProfile = () => {
     const submitHandler = async (e) => {
         e.preventDefault()
         try {
-        const response= await axios.put(`http://localhost:8082/api/auth/updateUser/${location.state.userId}`, data,{
+        const response= await axios.put(`https://easybuy-production.up.railway.app/api/auth/updateUser/${location.state.userId}`, data,{
           method: "PUT",
           headers: {
     "Authorization": `Bearer ${tokens}`,

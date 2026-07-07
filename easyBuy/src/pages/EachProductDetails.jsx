@@ -16,7 +16,7 @@ const EachProductDetails = () => {
     useEffect(() => {
         const fetch = async () => {
             try{
-            const response = await axios.get(`http://localhost:8082/api/auth/products/getProductByCategory/${data.categoryName}`,{
+            const response = await axios.get(`https://easybuy-production.up.railway.app/api/auth/products/getProductByCategory/${data.categoryName}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,
@@ -41,7 +41,7 @@ const cartData={
 }
 console.log(cartData)
 try{
- const response=await axios.post("http://localhost:8082/api/auth/cart/addcart",cartData,{
+ const response=await axios.post("https://easybuy-production.up.railway.app/api/auth/cart/addcart",cartData,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,

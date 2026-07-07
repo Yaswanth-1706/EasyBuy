@@ -18,7 +18,7 @@ const Products = () => {
     const fetchCat = async () => {
       try{
   const response = await axios.get(
-    "http://localhost:8082/api/auth/category/getCategory",{
+    "https://easybuy-production.up.railway.app/api/auth/category/getCategory",{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`
@@ -42,7 +42,7 @@ catch(err){
       try{
         setLoading(true)
       const response = await axios.get(
-        `http://localhost:8082/api/auth/products/${filter}`,{
+        `https://easybuy-production.up.railway.app/api/auth/products/${filter}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,

@@ -13,7 +13,7 @@ const Orders = () => {
     const navigate=useNavigate()
     const fetchData=async()=>{
         try{
-     const response=await axios.get(`http://localhost:8082/api/auth/order/getOrderById/${user.userId}`,{
+     const response=await axios.get(`https://easybuy-production.up.railway.app/api/auth/order/getOrderById/${user.userId}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,
@@ -30,7 +30,7 @@ const Orders = () => {
         const arr=await Promise.all(
             data.map(async(item)=>{
                    
-                const response=await axios.get(`http://localhost:8082/api/auth/products/getProduct/${item.productId}`,{
+                const response=await axios.get(`https://easybuy-production.up.railway.app/api/auth/products/getProduct/${item.productId}`,{
                    method: "GET",
                    headers: {
                       "Authorization": `Bearer ${tokens}`,
@@ -61,7 +61,7 @@ const Orders = () => {
     },[data])
   const remove=async(id)=>{
     try{
-    const removedata=await axios.delete(`http://localhost:8082/api/auth/order/deleteOrder/${id}`,{
+    const removedata=await axios.delete(`https://easybuy-production.up.railway.app/api/auth/order/deleteOrder/${id}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,
