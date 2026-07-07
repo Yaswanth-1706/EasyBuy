@@ -19,7 +19,7 @@ import com.service.product.entity.Category;
 import com.service.product.entity.Product;
 import com.service.product.payload.CategoryDTO;
 import com.service.product.service.CategoryService;
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/category")
 public class CategoryController {
