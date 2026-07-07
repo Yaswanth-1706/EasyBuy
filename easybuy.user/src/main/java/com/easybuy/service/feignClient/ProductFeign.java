@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import com.easybuy.service.payload.CategoryDTO;
 import com.easybuy.service.payload.ProductDTO;
 
-@FeignClient(name="product-service", url="astonishing-intuition-production-ed55.up.railway.app")
+@FeignClient(name="product-service", url="https://astonishing-intuition-production-ed55.up.railway.app")
 public interface ProductFeign {
 	@PostMapping("/products/addProduct")
 	ProductDTO addProduct(@RequestBody ProductDTO product);
