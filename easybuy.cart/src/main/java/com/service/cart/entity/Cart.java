@@ -12,7 +12,7 @@ import lombok.Data;
 @Data
 public class Cart {
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 private int  cartId;
 private int userId;
 private int productId;
