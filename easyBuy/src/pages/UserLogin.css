@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Work+Sans:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.login-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:60px;
+
+    background-image:url("../assets/loginbckg.png");
+    background-size:cover;
+    background-position:center;
+
+    font-family:'Work Sans',sans-serif;
+}
+
+.login-panel{
+    width:420px;
+    background:#FFFFFF;
+    padding:40px 35px;
+    border-radius:18px;
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+}
+
+/* Brand */
+
+.brand-mark{
+    margin-bottom:25px;
+}
+
+.brand-mark h1{
+    font-family:'Fraunces',serif;
+    font-size:42px;
+    color:#1F2937;
+}
+
+.brand-mark p{
+    color:#37C8FE;
+    font-size:18px;
+}
+
+/* Heading */
+
+.form-heading{
+    margin-bottom:25px;
+}
+
+.form-heading h2{
+    font-size:32px;
+    color:#1F2937;
+    margin-bottom:4px;
+}
+
+.form-heading p{
+    color:#6B7280;
+    font-size:17px;
+}
+
+/* Form */
+
+.login-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.form-group label{
+    font-size:15px;
+    font-weight:600;
+    color:#1F2937;
+}
+
+.form-group input{
+    width:100%;
+    height:46px;
+    padding:0 15px;
+
+    border:1px solid #E5E7EB;
+    border-radius:8px;
+
+    background:#F5F7FA;
+
+    font-size:15px;
+    color:#1F2937;
+
+    outline:none;
+    transition:.3s;
+}
+
+.form-group input::placeholder{
+    color:#9CA3AF;
+}
+
+.form-group input:focus{
+    border-color:#37C8FE;
+    background:#FFFFFF;
+    box-shadow:0 0 0 3px rgba(55,200,254,.25);
+}
+
+/* Button */
+
+.submit-btn{
+    height:48px;
+
+    border:none;
+    border-radius:8px;
+
+    background:#FB641B;
+    color:#FFFFFF;
+
+    font-size:17px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.submit-btn:hover{
+    background:#E85B14;
+}
+
+/* Footer */
+
+.login-redirect{
+    margin-top:10px;
+    text-align:center;
+
+    font-size:15px;
+    color:#6B7280;
+}
+
+.login-redirect span{
+    color:#37C8FE;
+    font-weight:600;
+    cursor:pointer;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.login-page{
+    justify-content:center;
+    padding:20px;
+}
+
+.login-panel{
+    width:100%;
+    max-width:420px;
+}
+
+.brand-mark h1{
+    font-size:36px;
+}
+
+.form-heading h2{
+    font-size:28px;
+}
+
+}
+
+/* Chrome Autofill Fix */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active{
+
+    -webkit-text-fill-color:#1F2937 !important;
+    caret-color:#1F2937;
+
+    -webkit-box-shadow:0 0 0 1000px #F5F7FA inset !important;
+    box-shadow:0 0 0 1000px #F5F7FA inset !important;
+
+    transition:background-color 5000s ease-in-out 0s;
+}
+/* ===========================
+   Tablet View
+=========================== */
+@media (max-width:1024px){
+
+    .login-page{
+        justify-content:center;
+        padding:30px;
+        background-position:center;
+    }
+
+    .login-panel{
+        width:420px;
+    }
+
+}
+
+
+/* ===========================
+   Mobile View
+=========================== */
+@media (max-width:768px){
+
+    .login-page{
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+        background-position:center;
+        background-size:cover;
+    }
+
+    .login-panel{
+        width:100%;
+        max-width:400px;
+        padding:28px 22px;
+        border-radius:16px;
+    }
+
+    .brand-mark{
+        margin-bottom:20px;
+    }
+
+    .brand-mark h1{
+        font-size:30px;
+    }
+
+    .brand-mark p{
+        font-size:15px;
+    }
+
+    .form-heading{
+        margin-bottom:20px;
+    }
+
+    .form-heading h2{
+        font-size:28px;
+    }
+
+    .form-heading p{
+        font-size:15px;
+    }
+
+    .form-group label{
+        font-size:15px;
+    }
+
+    .form-group input{
+        height:46px;
+        font-size:15px;
+    }
+
+    .submit-btn{
+        height:46px;
+        font-size:16px;
+    }
+
+    .login-redirect{
+        font-size:14px;
+    }
+
+}
+
+
+/* ===========================
+   Small Mobile View
+=========================== */
+@media (max-width:480px){
+
+    .login-page{
+        padding:15px;
+    }
+
+    .login-panel{
+        width:100%;
+        padding:22px 18px;
+    }
+
+    .brand-mark h1{
+        font-size:26px;
+    }
+
+    .brand-mark p{
+        font-size:14px;
+    }
+
+    .form-heading h2{
+        font-size:24px;
+    }
+
+    .form-heading p{
+        font-size:14px;
+    }
+
+    .form-group{
+        gap:5px;
+    }
+
+    .form-group label{
+        font-size:14px;
+    }
+
+    .form-group input{
+        height:44px;
+        font-size:14px;
+        padding:0 12px;
+    }
+
+    .submit-btn{
+        height:44px;
+        font-size:15px;
+    }
+
+    .login-redirect{
+        font-size:13px;
+    }
+
+}

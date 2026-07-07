@@ -1,0 +1,216 @@
+/* ===========================
+   Profile.css
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 60px;
+
+    background-image: url("../assets/loginbckg.png");
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Work Sans', sans-serif;
+}
+
+.profile-card {
+    width: 100%;
+    max-width: 500px;
+    background: #FFFFFF;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    padding: 35px;
+    text-align: center;
+    transition: .3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #37C8FE;
+    margin-bottom: 25px;
+}
+
+.profile-title {
+    color: #1F2937;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info p {
+    margin: 18px 0;
+    font-size: 17px;
+    color: #555555;
+    line-height: 1.6;
+    word-break: break-word;
+    padding: 12px 15px;
+    background: #F5F7FA;
+    border-radius: 8px;
+}
+
+.profile-info span {
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.edit-btn {
+    margin-top: 30px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #FB641B;
+    color: #FFFFFF;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.edit-btn:hover {
+    background: #E85B14;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+
+    .profile-container {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .profile-card {
+        padding: 25px;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-title {
+        font-size: 24px;
+    }
+
+    .profile-info p {
+        font-size: 15px;
+    }
+}
+/* ===========================
+   Tablet View
+=========================== */
+@media (max-width:1024px){
+
+    .profile-container{
+        justify-content:center;
+        padding:30px;
+        background-position:center;
+    }
+
+    .profile-card{
+        width:100%;
+        max-width:500px;
+    }
+
+}
+
+
+/* ===========================
+   Mobile View
+=========================== */
+@media (max-width:768px){
+
+    .profile-container{
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+        background-position:center;
+        background-size:cover;
+    }
+
+    .profile-card{
+        width:100%;
+        max-width:420px;
+        padding:28px 22px;
+        border-radius:16px;
+    }
+
+    .profile-image{
+        width:130px;
+        height:130px;
+        margin-bottom:20px;
+    }
+
+    .profile-title{
+        font-size:24px;
+        margin-bottom:20px;
+    }
+
+    .profile-info p{
+        font-size:15px;
+        padding:10px 12px;
+        margin:14px 0;
+    }
+
+    .edit-btn{
+        margin-top:22px;
+        padding:13px;
+        font-size:16px;
+    }
+
+}
+
+
+/* ===========================
+   Small Mobile View
+=========================== */
+@media (max-width:480px){
+
+    .profile-container{
+        padding:15px;
+    }
+
+    .profile-card{
+        width:100%;
+        padding:22px 18px;
+    }
+
+    .profile-image{
+        width:110px;
+        height:110px;
+    }
+
+    .profile-title{
+        font-size:22px;
+    }
+
+    .profile-info p{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .edit-btn{
+        padding:12px;
+        font-size:15px;
+    }
+
+}

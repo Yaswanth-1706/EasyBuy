@@ -1,0 +1,322 @@
+/* ==========================
+   Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================
+   Background
+========================== */
+
+.buy-page{
+    min-height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:70px;
+    font-family:'Work Sans',sans-serif;
+
+    background-image:url("../assets/loginbckg.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* ==========================
+   Order Card
+========================== */
+
+.buy-card{
+    width:480px;
+    background:#FFFFFF;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.18);
+}
+
+/* ==========================
+   Heading
+========================== */
+
+.buy-heading{
+    text-align:center;
+    font-size:32px;
+    color:#1F2937;
+    margin-bottom:30px;
+    font-weight:700;
+}
+
+/* ==========================
+   Order Details
+========================== */
+
+.buy-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin:18px 0;
+    font-size:18px;
+}
+
+.buy-label{
+    color:#1F2937;
+    font-weight:600;
+}
+
+.buy-value{
+    color:#555;
+    max-width:250px;
+    text-align:right;
+    line-height:1.5;
+}
+
+/* ==========================
+   Total
+========================== */
+
+.buy-total{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-top:25px;
+    padding-top:18px;
+
+    border-top:2px solid #E5E7EB;
+
+    font-size:24px;
+    font-weight:700;
+    color:#1F2937;
+}
+
+/* ==========================
+   Payment
+========================== */
+
+.payment-box{
+    margin-top:30px;
+}
+
+.payment-box h4{
+    margin-bottom:12px;
+    color:#1F2937;
+    font-size:20px;
+}
+
+.payment-select{
+    width:100%;
+    padding:13px 15px;
+    border:2px solid #E5E7EB;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+    background:#FFFFFF;
+    color:#1F2937;
+}
+
+.payment-select:focus{
+    border-color:#37C8FE;
+    box-shadow:0 0 8px rgba(55,200,254,.35);
+}
+
+/* ==========================
+   Button
+========================== */
+
+.place-btn{
+    width:100%;
+    margin-top:35px;
+    padding:15px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#FB641B;
+    color:#FFFFFF;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+    transition:.3s;
+}
+
+.place-btn:hover{
+    background:#e85b14;
+    transform:translateY(-2px);
+    box-shadow:0 8px 18px rgba(251,100,27,.35);
+}
+
+.place-btn:active{
+    transform:scale(.98);
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+    .buy-page{
+        justify-content:center;
+        padding:20px;
+    }
+
+    .buy-card{
+        width:100%;
+        max-width:450px;
+    }
+
+    .buy-heading{
+        font-size:28px;
+    }
+
+    .buy-row,
+    .buy-total{
+        font-size:16px;
+    }
+}
+.order-image{
+    height: 200px;
+}
+/* ==========================================
+   Tablet View
+========================================== */
+
+@media screen and (max-width:1024px){
+
+    .buy-page{
+        justify-content:center;
+        padding:30px;
+    }
+
+    .buy-card{
+        width:100%;
+        max-width:500px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile View
+========================================== */
+
+@media screen and (max-width:768px){
+
+    .buy-page{
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+        background-position:center;
+        background-size:cover;
+    }
+
+    .buy-card{
+        width:100%;
+        max-width:420px;
+        padding:25px 20px;
+        border-radius:16px;
+    }
+
+    .buy-heading{
+        font-size:26px;
+        margin-bottom:25px;
+    }
+
+    .order-image{
+        width:100%;
+        max-width:180px;
+        height:180px;
+        object-fit:contain;
+        display:block;
+        margin:0 auto 20px;
+    }
+
+    .buy-row{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:5px;
+        font-size:15px;
+        margin:15px 0;
+    }
+
+    .buy-value{
+        max-width:100%;
+        text-align:left;
+    }
+
+    .buy-total{
+        font-size:20px;
+        margin-top:20px;
+    }
+
+    .payment-box h4{
+        font-size:18px;
+    }
+
+    .payment-select{
+        padding:12px;
+        font-size:15px;
+    }
+
+    .place-btn{
+        padding:14px;
+        font-size:16px;
+    }
+
+}
+
+
+/* ==========================================
+   Small Mobile View
+========================================== */
+
+@media screen and (max-width:480px){
+
+    .buy-page{
+        padding:15px;
+    }
+
+    .buy-card{
+        padding:20px 16px;
+    }
+
+    .buy-heading{
+        font-size:22px;
+    }
+
+    .order-image{
+        max-width:150px;
+        height:150px;
+    }
+
+    .buy-row{
+        font-size:14px;
+    }
+
+    .buy-total{
+        font-size:18px;
+    }
+
+    .payment-box h4{
+        font-size:16px;
+    }
+
+    .payment-select{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .place-btn{
+        padding:12px;
+        font-size:15px;
+    }
+
+}

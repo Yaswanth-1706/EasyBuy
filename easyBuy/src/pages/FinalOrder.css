@@ -1,0 +1,291 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.order-pages{
+  min-height:100vh;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding-right:60px;
+
+    background-image:url("../assets/loginbckg.png");
+    background-size:cover;
+    background-position:center;
+
+    font-family:'Work Sans',sans-serif;
+}
+
+.order-cards{
+
+    width:520px;
+
+    background:#FFFFFF;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.success-icon{
+
+    width:90px;
+    height:90px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:48px;
+    font-weight:bold;
+}
+
+.order-headings{
+
+    color:#1F2937;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+}
+
+.order-rows{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin:18px 0;
+
+    padding-bottom:12px;
+
+    border-bottom:1px solid #E5E7EB;
+}
+
+.order-labels{
+
+    color:#555;
+
+    font-size:18px;
+
+    font-weight:600;
+}
+
+.order-values{
+
+    color:#1F2937;
+
+    font-size:18px;
+
+    font-weight:700;
+}
+
+.payment-success{
+
+    color:#16A34A;
+
+    font-weight:700;
+
+    font-size:18px;
+}
+
+.order-messages{
+
+    margin:30px 0;
+
+    color:#555;
+
+    line-height:1.7;
+
+    font-size:16px;
+}
+
+.order-buttons{
+
+    display:flex;
+
+    gap:15px;
+}
+
+.continue-btn,
+.orders-btns{
+
+    flex:1;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.continue-btn{
+
+    background:#37C8FE;
+}
+
+.continue-btn:hover{
+
+    background:#20B9F3;
+}
+
+.orders-btns{
+
+    background:#FB641B;
+}
+
+.orders-btns:hover{
+
+    background:#E85B14;
+}
+
+/* ==========================================
+   Tablet View
+========================================== */
+
+@media screen and (max-width:1024px){
+
+    .order-pages{
+        justify-content:center;
+        padding:30px;
+    }
+
+    .order-cards{
+        width:100%;
+        max-width:520px;
+    }
+
+}
+
+
+/* ==========================================
+   Mobile View
+========================================== */
+
+@media screen and (max-width:768px){
+
+    .order-pages{
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+        background-position:center;
+        background-size:cover;
+    }
+
+    .order-cards{
+        width:100%;
+        max-width:420px;
+        padding:28px 22px;
+        border-radius:16px;
+    }
+
+    .success-icon{
+        width:75px;
+        height:75px;
+        font-size:40px;
+    }
+
+    .order-headings{
+        font-size:28px;
+        margin-bottom:25px;
+    }
+
+    .order-rows{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:6px;
+        margin:15px 0;
+    }
+
+    .order-labels,
+    .order-values,
+    .payment-success{
+        font-size:16px;
+    }
+
+    .order-messages{
+        font-size:15px;
+        margin:25px 0;
+    }
+
+    .order-buttons{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .continue-btn,
+    .orders-btns{
+        width:100%;
+        padding:13px;
+        font-size:15px;
+    }
+
+}
+
+
+/* ==========================================
+   Small Mobile View
+========================================== */
+
+@media screen and (max-width:480px){
+
+    .order-pages{
+        padding:15px;
+    }
+
+    .order-cards{
+        padding:20px 16px;
+    }
+
+    .success-icon{
+        width:65px;
+        height:65px;
+        font-size:34px;
+    }
+
+    .order-headings{
+        font-size:24px;
+    }
+
+    .order-labels,
+    .order-values,
+    .payment-success{
+        font-size:14px;
+    }
+
+    .order-messages{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .continue-btn,
+    .orders-btns{
+        padding:12px;
+        font-size:14px;
+    }
+
+}
