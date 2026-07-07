@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.easybuy.service.payload.OrderDTO;
 
-@FeignClient(name="order-service", url="http://localhost:8085")
+@FeignClient(name="order-service", url="https://gracious-alignment-production.up.railway.app")
 public interface OrderFeign {
 
 	@PostMapping("/order/createOrder")
