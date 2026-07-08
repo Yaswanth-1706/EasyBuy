@@ -32,10 +32,10 @@
 ========================== */
 
 .buy-card{
-    width:480px;
+    width:420px;
     background:#FFFFFF;
     border-radius:18px;
-    padding:35px;
+    padding:28px;
     box-shadow:0 12px 30px rgba(0,0,0,0.18);
 }
 
@@ -45,9 +45,9 @@
 
 .buy-heading{
     text-align:center;
-    font-size:32px;
+    font-size:28px;
     color:#1F2937;
-    margin-bottom:30px;
+    margin-bottom:24px;
     font-weight:700;
 }
 
@@ -59,20 +59,22 @@
     display:flex;
     justify-content:space-between;
     align-items:flex-start;
-    margin:18px 0;
-    font-size:18px;
+    margin:15px 0;
+    font-size:16px;
 }
 
 .buy-label{
     color:#1F2937;
     font-weight:600;
+    font-size:16px;
 }
 
 .buy-value{
     color:#555;
-    max-width:250px;
+    max-width:230px;
     text-align:right;
     line-height:1.5;
+    font-size:16px;
 }
 
 /* ==========================
@@ -84,12 +86,12 @@
     justify-content:space-between;
     align-items:center;
 
-    margin-top:25px;
-    padding-top:18px;
+    margin-top:22px;
+    padding-top:16px;
 
     border-top:2px solid #E5E7EB;
 
-    font-size:24px;
+    font-size:20px;
     font-weight:700;
     color:#1F2937;
 }
@@ -99,21 +101,21 @@
 ========================== */
 
 .payment-box{
-    margin-top:30px;
+    margin-top:24px;
 }
 
 .payment-box h4{
     margin-bottom:12px;
     color:#1F2937;
-    font-size:20px;
+    font-size:18px;
 }
 
 .payment-select{
     width:100%;
-    padding:13px 15px;
+    padding:11px 14px;
     border:2px solid #E5E7EB;
     border-radius:10px;
-    font-size:16px;
+    font-size:15px;
     outline:none;
     transition:.3s;
     background:#FFFFFF;
@@ -131,8 +133,8 @@
 
 .place-btn{
     width:100%;
-    margin-top:35px;
-    padding:15px;
+    margin-top:28px;
+    padding:13px;
 
     border:none;
     border-radius:10px;
@@ -140,7 +142,7 @@
     background:#FB641B;
     color:#FFFFFF;
 
-    font-size:18px;
+    font-size:16px;
     font-weight:700;
 
     cursor:pointer;
@@ -156,7 +158,6 @@
 .place-btn:active{
     transform:scale(.98);
 }
-
 /* ==========================
    Responsive
 ========================== */
@@ -170,21 +171,31 @@
 
     .buy-card{
         width:100%;
-        max-width:450px;
+        max-width:400px;
     }
 
     .buy-heading{
-        font-size:28px;
+        font-size:24px;
     }
 
     .buy-row,
     .buy-total{
-        font-size:16px;
+        font-size:15px;
     }
 }
+
+/* ==========================
+   Product Image
+========================== */
+
 .order-image{
-    height: 200px;
+    width:150px;
+    height:150px;
+    object-fit:contain;
+    display:block;
+    margin:0 auto;
 }
+
 /* ==========================================
    Tablet View
 ========================================== */
@@ -198,11 +209,10 @@
 
     .buy-card{
         width:100%;
-        max-width:500px;
+        max-width:430px;
     }
 
 }
-
 
 /* ==========================================
    Mobile View
@@ -220,59 +230,63 @@
 
     .buy-card{
         width:100%;
-        max-width:420px;
-        padding:25px 20px;
+        max-width:380px;
+        padding:22px 18px;
         border-radius:16px;
     }
 
     .buy-heading{
-        font-size:26px;
-        margin-bottom:25px;
+        font-size:22px;
+        margin-bottom:20px;
     }
 
     .order-image{
         width:100%;
-        max-width:180px;
-        height:180px;
+        max-width:140px;
+        height:140px;
         object-fit:contain;
         display:block;
-        margin:0 auto 20px;
+        margin:0 auto 18px;
     }
 
     .buy-row{
         flex-direction:column;
         align-items:flex-start;
         gap:5px;
-        font-size:15px;
-        margin:15px 0;
+        font-size:14px;
+        margin:14px 0;
+    }
+
+    .buy-label{
+        font-size:14px;
     }
 
     .buy-value{
         max-width:100%;
         text-align:left;
+        font-size:14px;
     }
 
     .buy-total{
-        font-size:20px;
-        margin-top:20px;
+        font-size:18px;
+        margin-top:18px;
     }
 
     .payment-box h4{
-        font-size:18px;
+        font-size:16px;
     }
 
     .payment-select{
+        padding:10px;
+        font-size:14px;
+    }
+
+    .place-btn{
         padding:12px;
         font-size:15px;
     }
 
-    .place-btn{
-        padding:14px;
-        font-size:16px;
-    }
-
 }
-
 
 /* ==========================================
    Small Mobile View
@@ -285,38 +299,47 @@
     }
 
     .buy-card{
-        padding:20px 16px;
+        padding:18px 15px;
+        max-width:340px;
     }
 
     .buy-heading{
-        font-size:22px;
+        font-size:20px;
     }
 
     .order-image{
-        max-width:150px;
-        height:150px;
+        max-width:120px;
+        height:120px;
     }
 
     .buy-row{
-        font-size:14px;
+        font-size:13px;
+    }
+
+    .buy-label{
+        font-size:13px;
+    }
+
+    .buy-value{
+        font-size:13px;
     }
 
     .buy-total{
-        font-size:18px;
+        font-size:17px;
     }
 
     .payment-box h4{
-        font-size:16px;
+        font-size:15px;
     }
 
     .payment-select{
-        font-size:14px;
-        padding:10px;
+        font-size:13px;
+        padding:9px;
     }
 
     .place-btn{
-        padding:12px;
-        font-size:15px;
+        padding:11px;
+        font-size:14px;
     }
 
 }
