@@ -44,15 +44,6 @@ nav{
     font-size:24px;
 }
 
-/* Center */
-
-.Nav-center{
-    flex:1;
-    display:flex;
-    justify-content:center;
-}
-
-
 /* Right */
 
 .Nav-right{
@@ -60,6 +51,15 @@ nav{
 
     display:flex;
     align-items:center;
+    gap:10px;
+}
+
+.Nav-right h3{
+    margin:0;
+    font-size:15px;
+    font-weight:500;
+    color:#1F2937;
+    white-space:nowrap;
 }
 
 .profile{
@@ -97,65 +97,6 @@ nav{
     background:#E85B14;
 }
 
-/* Dropdown */
-
-.profile-dropdown{
-    position:absolute;
-
-    top:45px;
-    right:0;
-
-    width:170px;
-
-    background:#FFFFFF;
-
-    border:1px solid #E5E7EB;
-    border-radius:8px;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
-
-    padding:10px;
-}
-
-.profile-name{
-    text-align:center;
-    margin-bottom:10px;
-
-    font-size:14px;
-    font-weight:600;
-    color:#1F2937;
-}
-
-.profile-dropdown button{
-    width:100%;
-    padding:8px;
-}
-
-/* Mobile */
-
-@media(max-width:768px){
-
-.Nav,
-nav{
-    padding:6px 12px;
-    gap:10px;
-}
-
-.logo{
-    font-size:18px;
-}
-
-.logo-icon{
-    font-size:20px;
-}
-
-.profile{
-    width:32px;
-    height:32px;
-}
-
-
-}
 /* ===========================
    Profile Dropdown
 =========================== */
@@ -194,7 +135,7 @@ nav{
     }
 }
 
-/* Username */
+/* Username inside dropdown */
 
 .profile-name{
     text-align:center;
@@ -254,55 +195,63 @@ nav{
 }
 
 
-
-
 /* ==========================================
-   Mobile View
+   Mobile View - single line nav
 ========================================== */
 
 @media screen and (max-width:768px){
 
-    .Nav,
-    nav{
-        max-height:none;
-        padding:12px;
-        flex-wrap:wrap;
-        gap:12px;
-    }
-
-    .Nav-left{
-        width:auto;
-    }
-
-    .logo{
-        font-size:20px;
-    }
-
-    .logo-icon{
-        font-size:22px;
-    }
-
-    .Nav-center{
-        order:3;
-        width:100%;
-        flex:0 0 100%;
-    }
-
-    .Nav-right{
-        margin-left:auto;
-    }
-
-    .profile{
-        width:34px;
-        height:34px;
-    }
-
-    .profile-dropdown{
-        width:180px;
-        top:48px;
-        right:0;
-    }
-
+.Nav,
+nav{
+    max-height:none;
+    padding:6px 6px !important;
+    flex-wrap:nowrap !important;
+    gap:4px !important;
 }
 
+.Nav-left{
+    gap:4px;
+    flex-shrink:0;
+}
 
+.logo{
+    font-size:14px;
+    gap:3px;
+}
+
+.logo-icon{
+    font-size:16px;
+}
+
+.Nav-back{
+    padding:4px 8px;
+    font-size:11px;
+    flex-shrink:0;
+    white-space:nowrap;
+}
+
+.Nav-right{
+    flex-shrink:0;
+    gap:4px;
+}
+
+.Nav-right h3{
+    font-size:11px;
+    max-width:55px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.profile{
+    width:26px;
+    height:26px;
+    flex-shrink:0;
+}
+
+.profile-dropdown{
+    width:180px;
+    top:44px;
+    right:0;
+}
+
+}

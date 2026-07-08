@@ -25,12 +25,6 @@ const Nav = () => {
 </h1>
         <button className="Nav-back" onClick={() => navigate(-1)}>Back</button>
       </div>
-
-     {/* <center>
-     <div className="search-page">
-    <input type="text" placeholder="Enter product names"  onClick={()=>navigate('/search')}/>
-  </div>     
-  </center>    */}
       <div className="Nav-right">
               <h3>{userName}</h3>
               {/* <h3 className='space'>"""""""""""</h3> */}
