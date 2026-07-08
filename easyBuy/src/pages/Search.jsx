@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom';
 import './Search.css'
-import SearchNav from './SearchNav';
+import Nav from './Nav';
 const Search = () => {
     const [search,setSearch]=useState("");
     const [data,setData]=useState([]);
@@ -35,29 +35,30 @@ const Search = () => {
     },[search])
  return (
   <div className='total'>
-   <SearchNav search={search} setSearch={setSearch} />
-<center>
-<div className="search-result-page">
-  {data.length > 0 ? (
-    <div className="search-results">
-      {data.map((item, key) => (
-        <h3
-          className="search-result-item"
-          key={key}
-          onClick={() => navigate('/eachProduct', { state: item })}
-        >
-          {item.productName}
-        </h3>
-      ))}
+    <Nav/>
+    <div>
+    <div className="search-bkgs">
+      <input className='search-pages' type="text" placeholder="Enter product names"  onChange={handleSearch}/>
     </div>
-  ) : (
-    
-    search !== "" && <p className="search-empty">No products found</p>
-      
-  )}
-</div>
-  </center>
- 
+    </div>
+
+    <div className="search-result-page">
+      {data.length > 0 ? (
+        <div className="search-results">
+          {data.map((item, key) => (
+            <h3
+              className="search-result-item"
+              key={key}
+              onClick={() => navigate('/eachProduct', { state: item })}
+            >
+              {item.productName}
+            </h3>
+          ))}
+        </div>
+      ) : (
+        search !== "" && <p className="search-empty">No products found</p>
+      )}
+    </div>
   </div>
 )
 }

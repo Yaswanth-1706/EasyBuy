@@ -70,17 +70,18 @@ catch(err){
  return (
   
   <div className="main-products">
-    <Nav />
-   
-
+    <Nav />       
     {loading ? (
       <div className="loading-container">
         <div className="loader"></div>
         <h2>Loading...</h2>
       </div>
     ) : (
+      <div> 
+     <div className="search-bkg">
+    <input className='search-page' type="text" placeholder="Enter product names"  onClick={()=>navigate('/search')}/>
+     </div>  
       <div className="products-page">
-
         {/* Categories */}
         <div className="sideBar">
           <table>
@@ -128,6 +129,7 @@ catch(err){
           ))}
         </div>
 
+      </div>
       </div>
     )}
   </div>
