@@ -68,8 +68,10 @@ catch(err){
     setFilter(`getProductByCategory/${categoryName}`);
   };
  return (
+  
   <div className="main-products">
     <Nav />
+   
 
     {loading ? (
       <div className="loading-container">
