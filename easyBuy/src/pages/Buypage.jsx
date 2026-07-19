@@ -18,7 +18,7 @@ const Buypage = () => {
         "productOrderId":id
     }
         try{
-        const response=await axios.post("https://easybuy-production.up.railway.app/api/auth/order/createOrder",data,{
+        const response=await axios.post("https://easybuy-rztb.onrender.com/api/auth/order/createOrder",data,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,
