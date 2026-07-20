@@ -23,7 +23,7 @@ const UserRegistration = () => {
     const submitHandler = async (e) => {
         e.preventDefault()
         try {
-            await axios.post("https://easybuy-production.up.railway.app/api/auth/register", data);
+            await axios.post("https://easybuy-rztb.onrender.com/api/auth/register", data);
             alert("Registration successful")
             navigate('/')
         } catch (err) {
