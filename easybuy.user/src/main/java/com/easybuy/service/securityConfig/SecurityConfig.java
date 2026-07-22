@@ -55,7 +55,7 @@ public class SecurityConfig {
 
 	    configuration.setAllowedOrigins(List.of(
 	    	    "http://localhost:5173",
-	    	    "https://easybuy-frontend-4e8y.onrender.com"
+	    	    "https://easybuy-frontend-qom8.onrender.com"
 	    	));
 
 	    configuration.setAllowedMethods(
