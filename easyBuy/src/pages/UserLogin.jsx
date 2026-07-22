@@ -23,14 +23,14 @@ const UserLogin = () => {
 
     try {
       const token = await axios.post(
-        "https://easybuy-rztb.onrender.com/api/auth/login",
+        "https://easybuy-user.onrender.com/api/auth/login",
         loginData
       );
 
       localStorage.setItem("token", token.data.token);
 
       const user = await axios.get(
-        `https://easybuy-rztb.onrender.com/api/auth/getUsersByEmail/${token.data.udto.userEmail}`,
+        `https://easybuy-user.onrender.com/api/auth/getUsersByEmail/${token.data.udto.userEmail}`,
         {
           headers: {
             Authorization: `Bearer ${token.data.token}`,

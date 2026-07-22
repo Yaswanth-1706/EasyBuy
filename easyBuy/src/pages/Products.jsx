@@ -18,7 +18,7 @@ const Products = () => {
     const fetchCat = async () => {
       try{
   const response = await axios.get(
-    "https://easybuy-rztb.onrender.com/api/auth/category/getCategory",{
+    "https://easybuy-user.onrender.com/api/auth/category/getCategory",{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`
@@ -43,7 +43,7 @@ catch(err){
       try{
         setLoading(true)
       const response = await axios.get(
-        `https://easybuy-rztb.onrender.com/api/auth/products/${filter}`,{
+        `https://easybuy-user.onrender.com/api/auth/products/${filter}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,

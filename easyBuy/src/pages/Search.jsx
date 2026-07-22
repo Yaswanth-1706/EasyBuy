@@ -16,7 +16,7 @@ const Search = () => {
         const fetch=async()=>{
      if(search!=="")
      {
-     const response=await axios.get(`https://easybuy-rztb.onrender.com/api/auth/products/getProductByProductName/${search}`,{
+     const response=await axios.get(`https://easybuy-user.onrender.com/api/auth/products/getProductByProductName/${search}`,{
           method: "GET",
           headers: {
     "Authorization": `Bearer ${tokens}`,
