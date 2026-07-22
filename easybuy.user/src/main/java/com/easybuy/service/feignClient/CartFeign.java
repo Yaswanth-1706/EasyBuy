@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.easybuy.service.payload.CartDTO;
 
-@FeignClient(name="cart-service", url="https://easybuy-cart-n6kc.onrender.com")
+@FeignClient(name="cart-service", url="https://easybuy-cart-y8rq.onrender.com")
 public interface CartFeign {
 	@PostMapping("/cart/addcart")
 	 public CartDTO addToCart(@RequestBody CartDTO cart);

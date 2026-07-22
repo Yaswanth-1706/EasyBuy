@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import com.easybuy.service.payload.OrderDTO;
 
-@FeignClient(name="order-service", url="https://easybuy-order-htki.onrender.com")
+@FeignClient(name="order-service", url="https://easybuy-order-ea3i.onrender.com")
 public interface OrderFeign {
 
 	@PostMapping("/order/createOrder")
