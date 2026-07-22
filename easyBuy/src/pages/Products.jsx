@@ -28,6 +28,7 @@ const Products = () => {
   setCategorys(response.data);
 }
 catch(err){
+  console.log(err)
   navigate("/")
 }
 }
@@ -54,6 +55,7 @@ catch(err){
 
     }
     catch(err){
+      console.log(err)
       navigate('/')
      }
     finally{

@@ -58,7 +58,7 @@ public class UserServiceImp implements UserService{
 		user.setUserName(userdto.getUserName());
 		user.setMobileNumber(userdto.getMobileNumber());
 		user.setUserAddress(userdto.getUserAddress());
-		user.setUserEmail(userdto.getUserEmail());
+		user.setUserEmail(userdto.getUserEmail());   
 		userRepo.save(user);
 		return userdto;
 		
